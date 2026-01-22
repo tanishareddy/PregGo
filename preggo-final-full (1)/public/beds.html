@@ -1,0 +1,27 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bed Availability</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><img src="assets/logo.png"><div class="title">PregGo</div></div>
+    <nav class="nav">
+      <a href="dashboard.html">Home</a>
+      <a href="beds.html" class="active">Bed Availability</a>
+      <a href="doctors.html">Doctor Availability</a>
+      <a href="history.html">Patient History</a>
+      <a href="symptoms.html">Symptom Tracker</a>
+      <a href="appointments.html">Virtual Appointments</a>
+      <a href="care.html">Care Guide</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="header"><div><div class="h-title">Real-time Bed Availability</div><div style="color:var(--muted)">Find nearby hospitals with available maternity beds</div></div></div>
+    <div class="panel">
+      <div class="hosp-list" id="hospList"></div>
+    </div>
+  </main>
+</div>
+<button class="fab-left" id="emBtn">!</button>
+<button class="fab-right" id="chatBtn">💬</button>
+<div class="chat-box" id="chatBox"><div class="chat-header"><img src="assets/logo.png" style="width:34px;height:34px;border-radius:8px"><div style="font-weight:700;color:var(--accent)">PregGo Assistant</div></div><div class="chat-body" id="chatBody">Hi — I'm PregGo assistant.</div><div class="chat-input"><input id="chatInput" class="input" placeholder="Type a message..."><button id="sendChat" class="btn">Send</button></div></div>
+<script src="script.js"></script>
+</body></html>

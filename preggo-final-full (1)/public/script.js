@@ -1,0 +1,39 @@
+async function api(path, method='GET', body){ const opts = { method, headers:{'Content-Type':'application/json'} }; if(body) opts.body = JSON.stringify(body); const res = await fetch('/api'+path, opts); return res.json().catch(()=>({})); }
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  // common: chat & emergency
+  const chatBtn = document.getElementById('chatBtn'); const chatBox = document.getElementById('chatBox'); const emBtn = document.getElementById('emBtn');
+  if(chatBtn){ chatBtn.addEventListener('click', ()=>{ if(chatBox.style.display==='flex'){ chatBox.style.display='none'} else chatBox.style.display='flex'}); }
+  if(emBtn){ emBtn.addEventListener('click', ()=>{ alert('Emergency — Call local emergency services or your assigned doctor now.\nHelpline: +1 800 123 456'); }); }
+  const sendChat = document.getElementById('sendChat'); if(sendChat){ sendChat.addEventListener('click', ()=>{ const input = document.getElementById('chatInput'); if(!input.value) return; const body = document.getElementById('chatBody'); const msg = document.createElement('div'); msg.style.margin='8px 0'; msg.style.padding='8px'; msg.style.background='#f6eefb'; msg.style.borderRadius='8px'; msg.textContent = input.value; body.appendChild(msg); // dummy reply
+    setTimeout(()=>{ const r = document.createElement('div'); r.style.margin='8px 0'; r.style.padding='8px'; r.style.background='#fff'; r.style.borderRadius='8px'; r.textContent = 'PregGo: Thanks — please describe any symptoms and I can suggest next steps or contact a doctor.'; body.appendChild(r); body.scrollTop = body.scrollHeight; },700); input.value=''; }); }
+
+  // login/signup handlers
+  const loginBtn = document.getElementById('loginBtn'); if(loginBtn){ loginBtn.onclick = async ()=>{ const email = document.getElementById('email').value; const password = document.getElementById('password').value; const res = await api('/users/login','POST',{email,password}); if(res && res.success){ localStorage.setItem('user', JSON.stringify(res.user)); location.href='onboarding.html'; } else alert(res.message || 'Invalid credentials'); }; }
+  const signupBtn = document.getElementById('signupBtn'); if(signupBtn){ signupBtn.onclick = async ()=>{ const name = document.getElementById('name').value; const email = document.getElementById('emailS').value; const password = document.getElementById('passwordS').value; const res = await api('/users/signup','POST',{name,email,password}); if(res && res.success){ alert('Account created — please login'); location.href='index.html'; } else alert(res.message || 'Signup failed'); }; }
+
+  // onboarding
+  const continueBtn = document.getElementById('continueBtn'); if(continueBtn){ continueBtn.onclick = ()=>{ // save minimal profile to localStorage and go to dashboard
+      const profile = { age: document.getElementById('age').value, blood: document.getElementById('blood').value, due: document.getElementById('due').value, em1: document.getElementById('em1').value, em2: document.getElementById('em2').value };
+      localStorage.setItem('profile', JSON.stringify(profile)); location.href='dashboard.html';
+    }; }
+  const locBtn = document.getElementById('locBtn'); if(locBtn){ locBtn.onclick = ()=>{ if(navigator.geolocation){ navigator.geolocation.getCurrentPosition((pos)=>{ alert('Location enabled'); localStorage.setItem('loc', JSON.stringify({lat:pos.coords.latitude,lon:pos.coords.longitude})); }, ()=>{ alert('Unable to get location'); }); } else alert('Geolocation not supported'); }; }
+
+  // populate dashboard hospitals and doctors
+  if(location.pathname.endsWith('dashboard.html')){ (async ()=>{ try{ const h = await api('/hospitals'); const area = document.getElementById('hospitalsArea'); (h.hospitals||[]).forEach(x=>{ const el = document.createElement('div'); el.className='hosp-item'; el.innerHTML = `<div><strong>${x.name}</strong><div style="color:var(--muted);font-size:13px">${x.distance}</div></div><div><span class="small-pill">${x.beds} beds</span></div>`; area.appendChild(el); }); }catch(e){ console.log(e); } })(); }
+
+  // beds page
+  if(location.pathname.endsWith('beds.html')){ (async ()=>{ const res = await api('/hospitals'); const list = document.getElementById('hospList'); (res.hospitals||[]).forEach(x=>{ const it = document.createElement('div'); it.className='hosp-item'; it.innerHTML = `<div><strong>${x.name}</strong><div style="color:var(--muted);font-size:13px">${x.distance}<br><small style="color:var(--muted)">${x.address||''}</small></div></div><div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end"><span class="small-pill">${x.beds} beds</span><button class="btn" onclick="window.open('https://www.google.com/maps/search/'+encodeURIComponent('${x.name}'))">Get Directions</button></div>`; list.appendChild(it); }); })(); }
+
+  // doctors page
+  if(location.pathname.endsWith('doctors.html')){ (async ()=>{ const res = await api('/doctors'); const container = document.getElementById('doctorCards'); const sel = document.getElementById('specFilter'); const specs = new Set(); (res.doctors||[]).forEach(d=>{ specs.add(d.specialty); const card = document.createElement('div'); card.className='panel'; card.style.marginBottom='12px'; card.innerHTML = `<strong>${d.name}</strong><div style="color:var(--muted);font-size:13px">${d.specialty} — ${d.hospital||''}</div><div style="margin-top:10px"><button class="btn" style="width:100%">Book Appointment</button></div>`; container.appendChild(card); }); specs.forEach(s=>{ const o = document.createElement('option'); o.value=s; o.textContent=s; sel.appendChild(o); }); })(); }
+
+  // history page - load appointments as records
+  if(location.pathname.endsWith('history.html')){ (async ()=>{ const res = await api('/appointments'); const panel = document.getElementById('recordsPanel'); (res.appointments||[]).forEach(a=>{ const row = document.createElement('div'); row.className='panel'; row.style.marginBottom='10px'; row.innerHTML = `<strong>${a.doctor}</strong><div style="color:var(--muted);font-size:13px">${a.date}</div><div style="margin-top:6px;color:var(--muted)">${a.notes||''}</div>`; panel.appendChild(row); }); })(); }
+
+  // symptoms page
+  if(location.pathname.endsWith('symptoms.html')){ const symList = document.getElementById('symList'); const logBtn = document.getElementById('logBtn'); logBtn && logBtn.addEventListener('click', ()=>{ const name = document.getElementById('symName').value; if(!name) return alert('Enter symptom'); const item = document.createElement('div'); item.className='panel'; item.style.marginBottom='8px'; item.textContent = name + ' — logged'; symList.prepend(item); document.getElementById('symName').value=''; }); }
+
+  // appointments page
+  if(location.pathname.endsWith('appointments.html')){ (async ()=>{ const docs = await api('/doctors'); const sel = document.getElementById('doctorSelect'); (docs.doctors||[]).forEach(d=>{ const o=document.createElement('option'); o.value=d.name; o.textContent = d.name + ' ('+d.specialty+')'; sel.appendChild(o); }); const ap = await api('/appointments'); const area = document.getElementById('appointmentsArea'); (ap.appointments||[]).forEach(a=>{ const el = document.createElement('div'); el.className='panel'; el.style.marginBottom='8px'; el.innerHTML = `<strong>${a.user}</strong> — ${a.doctor} <div style="color:var(--muted);font-size:13px">${a.date}</div>`; area.appendChild(el); }); document.getElementById('bookAppt').addEventListener('click', async ()=>{ const u = JSON.parse(localStorage.getItem('user')||'{}'); if(!u.email) return alert('Login first'); const doctor = document.getElementById('doctorSelect').value; const date = document.getElementById('apptDate').value; const notes = document.getElementById('apptNotes').value; const r = await api('/appointments','POST',{user:u.email,doctor,date,notes}); if(r && r.success){ alert('Appointment scheduled'); location.reload(); } else alert('Failed'); }); })(); }
+});

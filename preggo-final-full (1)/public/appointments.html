@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Virtual Appointments</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><img src="assets/logo.png"><div class="title">PregGo</div></div>
+    <nav class="nav">
+      <a href="dashboard.html">Home</a>
+      <a href="beds.html">Bed Availability</a>
+      <a href="doctors.html">Doctor Availability</a>
+      <a href="history.html">Patient History</a>
+      <a href="symptoms.html">Symptom Tracker</a>
+      <a href="appointments.html" class="active">Virtual Appointments</a>
+      <a href="care.html">Care Guide</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="header"><div><div class="h-title">Virtual Appointments</div><div style="color:var(--muted)">Manage your online consultations</div></div></div>
+    <div style="display:flex;gap:18px">
+      <div class="panel" style="flex:1">
+        <h4>Upcoming Appointments</h4>
+        <div id="appointmentsArea"></div>
+      </div>
+      <div class="panel" style="width:320px">
+        <h4>Schedule New</h4>
+        <select id="doctorSelect" class="input"></select>
+        <input id="apptDate" type="datetime-local" class="input">
+        <textarea id="apptNotes" class="input" placeholder="Notes"></textarea>
+        <div style="margin-top:10px"><button id="bookAppt" class="btn">Schedule Appointment</button></div>
+      </div>
+    </div>
+  </main>
+</div>
+<button class="fab-left" id="emBtn">!</button>
+<button class="fab-right" id="chatBtn">💬</button>
+<div class="chat-box" id="chatBox"><div class="chat-header"><img src="assets/logo.png" style="width:34px;height:34px;border-radius:8px"><div style="font-weight:700;color:var(--accent)">PregGo Assistant</div></div><div class="chat-body" id="chatBody">Hi — I'm PregGo assistant.</div><div class="chat-input"><input id="chatInput" class="input" placeholder="Type a message..."><button id="sendChat" class="btn">Send</button></div></div>
+<script src="script.js"></script>
+</body></html>

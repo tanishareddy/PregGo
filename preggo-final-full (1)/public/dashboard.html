@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PregGo — Dashboard</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <div class="brand"><img src="assets/logo.png"><div class="title">PregGo</div></div>
+    <nav class="nav">
+      <a href="dashboard.html" class="active">Home</a>
+      <a href="beds.html">Bed Availability</a>
+      <a href="doctors.html">Doctor Availability</a>
+      <a href="history.html">Patient History</a>
+      <a href="symptoms.html">Symptom Tracker</a>
+      <a href="appointments.html">Virtual Appointments</a>
+      <a href="care.html">Care Guide</a>
+    </nav>
+  </aside>
+  <main class="content">
+    <div class="header">
+      <div>
+        <div class="h-title">Welcome Back, Sarah</div>
+        <div style="color:var(--muted)">Week 24 of your pregnancy journey</div>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <div style="text-align:right"><div style="font-weight:700;color:var(--accent)">All Good ✓</div></div>
+      </div>
+    </div>
+
+    <div class="metrics">
+      <div class="metric"><strong>Pregnancy Progress</strong><div style="margin-top:10px"><div style="height:10px;border-radius:10px;background:#f1e6f6;overflow:hidden"><div style="width:60%;height:100%;background:linear-gradient(90deg,var(--accent),#ffb6d1)"></div></div><div style="margin-top:8px;color:var(--muted)">Week 24 of 40 — 60%</div></div></div>
+      <div class="metric"><strong>Next Appointment</strong><div style="margin-top:8px;color:var(--muted)">Dr. Emily Chen — Tomorrow, 2:30 PM</div></div>
+      <div class="metric"><strong>Health Status</strong><div style="margin-top:8px;color:var(--muted)">No issues detected</div></div>
+    </div>
+
+    <div class="panel">
+      <h3 style="color:var(--accent)">Real-time Bed Availability</h3>
+      <div class="hosp-list" id="hospitalsArea"></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <h4>Today's Care Tips</h4>
+        <div class="card-list" style="margin-top:12px">
+          <div class="panel"><strong>Nutrition Focus</strong><div style="color:var(--muted);font-size:13px;margin-top:6px">Include more iron-rich foods today</div></div>
+          <div class="panel"><strong>Gentle Exercise</strong><div style="color:var(--muted);font-size:13px;margin-top:6px">15 minutes of prenatal yoga</div></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h4>Quick Actions</h4>
+        <div style="margin-top:10px"><button class="ghost-btn" style="width:100%;margin-bottom:8px">Log Today's Symptoms</button><button class="ghost-btn" style="width:100%;margin-bottom:8px">Schedule Appointment</button><button class="ghost-btn" style="width:100%">View Health Reports</button></div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<button class="fab-left" id="emBtn">!</button>
+<button class="fab-right" id="chatBtn">💬</button>
+
+<!-- chat popup -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header"><img src="assets/logo.png" style="width:34px;height:34px;border-radius:8px"><div style="font-weight:700;color:var(--accent)">PregGo Assistant</div></div>
+  <div class="chat-body" id="chatBody"><div style="color:var(--muted);font-size:13px">Hi — I'm PregGo assistant. How can I help today?</div></div>
+  <div class="chat-input">
+    <input id="chatInput" class="input" placeholder="Type a message...">
+    <button id="sendChat" class="btn">Send</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body></html>
