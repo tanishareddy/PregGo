@@ -1,0 +1,101 @@
+[
+  {
+    "trimester": "First Trimester",
+    "weeks_range": "Weeks 1\u201312",
+    "body_changes": [
+      "Increase in hCG, estrogen, and progesterone affecting metabolism and mood regulation.",
+      "Breast tissue grows and becomes more sensitive as milk ducts begin developing.",
+      "Uterus enlarges slightly, though not always visible externally.",
+      "Blood volume begins increasing, potentially causing lightheadedness.",
+      "Energy levels fluctuate significantly due to metabolic rebalancing."
+    ],
+    "common_symptoms": [
+      "Nausea and vomiting (most common in mornings).",
+      "Heightened sensitivity to smell influencing food preferences.",
+      "Frequent urination triggered by hormonal influence, not uterus size yet.",
+      "Frequent fatigue and increased need for sleep.",
+      "Mild cramping and abdominal heaviness as uterus begins expanding."
+    ],
+    "baby_development_summary": "Organogenesis begins. Neural tube forms early. Baby\u2019s heart starts beating around week 6. Facial features, limb buds, and early skeletal structures appear.",
+    "development_milestones": [
+      {
+        "week_period": "Weeks 1\u20134",
+        "details": "Cell division, implantation, and placenta formation begin."
+      },
+      {
+        "week_period": "Weeks 5\u20138",
+        "details": "Neural tube closure; heartbeat detectable; basic organ systems begin forming."
+      },
+      {
+        "week_period": "Weeks 9\u201312",
+        "details": "Fingers, toes, eyelids form; fetus develops basic motor reflexes."
+      }
+    ]
+  },
+  {
+    "trimester": "Second Trimester",
+    "weeks_range": "Weeks 13\u201326",
+    "body_changes": [
+      "Visible baby bump develops as uterus expands into abdominal cavity.",
+      "Skin pigmentation changes such as linea nigra may appear.",
+      "Energy levels generally improve compared to the first trimester.",
+      "Increased blood volume may cause nasal congestion or mild swelling.",
+      "Appetite typically increases as nausea subsides."
+    ],
+    "common_symptoms": [
+      "Fetal movement (quickening) is typically first noticeable.",
+      "Heartburn due to relaxation of the esophageal sphincter.",
+      "Leg cramps commonly occur during sleep.",
+      "Round ligament pain forms from abdominal stretching.",
+      "Steady weight gain becomes more consistent."
+    ],
+    "baby_development_summary": "Fetus grows rapidly in size and weight. Skeletal system strengthens. Sensory organs develop; baby can hear sounds. Movements become coordinated.",
+    "development_milestones": [
+      {
+        "week_period": "Weeks 13\u201316",
+        "details": "Facial expressions and coordinated movement begin."
+      },
+      {
+        "week_period": "Weeks 17\u201320",
+        "details": "Mother can feel fetal movement; lanugo forms."
+      },
+      {
+        "week_period": "Weeks 21\u201326",
+        "details": "Lung development increases, and fetus practices breathing movements."
+      }
+    ]
+  },
+  {
+    "trimester": "Third Trimester",
+    "weeks_range": "Weeks 27\u201340+",
+    "body_changes": [
+      "Uterus rises and presses against diaphragm causing shortness of breath.",
+      "Braxton Hicks contractions increase in frequency and intensity.",
+      "Lower back pain increases due to posture and weight distribution.",
+      "Swelling in ankles and feet becomes more noticeable.",
+      "Baby drops lower into pelvis preparing for birth."
+    ],
+    "common_symptoms": [
+      "Difficulty sleeping due to physical discomfort.",
+      "Increased fatigue returning as energy demands peak.",
+      "Greater pelvic pressure particularly near labor.",
+      "Heartburn and digestive slowing continues.",
+      "Contractions may become more rhythmic as labor approaches."
+    ],
+    "baby_development_summary": "Baby achieves final organ maturation, especially lungs and brain. Fat accumulates, improving temperature regulation. Baby moves into birth position.",
+    "development_milestones": [
+      {
+        "week_period": "Weeks 27\u201332",
+        "details": "Brain growth accelerates; sleep-wake cycles develop."
+      },
+      {
+        "week_period": "Weeks 33\u201336",
+        "details": "Bones harden; lungs reach near-maturity; baby positions head-down."
+      },
+      {
+        "week_period": "Weeks 37\u201340+",
+        "details": "Baby reaches full term; body fat stabilizes; organ systems complete."
+      }
+    ]
+  }
+]

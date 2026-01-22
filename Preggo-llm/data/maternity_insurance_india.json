@@ -1,0 +1,62 @@
+[
+    {
+        "Insurer": "Care Health (formerly Religare)",
+        "Plan": "JOY Today / JOY Tomorrow",
+        "WaitingPeriod": "9 months (JOY Today) / 3 years (JOY Tomorrow)",
+        "PrenatalCare": "Yes (limited as per plan)",
+        "Delivery": "Covers Normal & C-section (subject to limits)",
+        "PostnatalCare": "Yes (as per limits)",
+        "NewbornCover": "Covered from birth up to 90 days (varies by SI)",
+        "VaccinationCover": "Varies / limited",
+        "MaxDeliveriesCovered": "Varies by plan",
+        "Notes": "Two options with short (9m) and long (3y) waiting periods; newborn covered 90 days then needs separate premium."
+    },
+    {
+        "Insurer": "Star Health and Allied Insurance",
+        "Plan": "Maternity Insurance / Family Floater with Maternity",
+        "WaitingPeriod": "12 - 36 months (varies by product)",
+        "PrenatalCare": "Yes (subject to sub-limits)",
+        "Delivery": "Covers Normal & C-section (subject to limits)",
+        "PostnatalCare": "Yes (as per policy wording)",
+        "NewbornCover": "Often included (check plan limits)",
+        "VaccinationCover": "May be included in some plans",
+        "MaxDeliveriesCovered": "Usually up to a fixed number (e.g., 2)",
+        "Notes": "Waiting period varies widely across Star Health products."
+    },
+    {
+        "Insurer": "Tata AIG",
+        "Plan": "Maternity Cover (Add-on/Standalone varies)",
+        "WaitingPeriod": "Up to 4 years (varies by product)",
+        "PrenatalCare": "Yes (depends on plan)",
+        "Delivery": "Covers Normal & C-section (subject to limits)",
+        "PostnatalCare": "Yes (as per terms)",
+        "NewbornCover": "Varies",
+        "VaccinationCover": "Limited / depends on plan",
+        "MaxDeliveriesCovered": "Varies",
+        "Notes": "Waiting period is typically longer; confirm plan brochure."
+    },
+    {
+        "Insurer": "ICICI Lombard",
+        "Plan": "Maternity Benefit Add-on / Family Floater Plans",
+        "WaitingPeriod": "9 - 24 months (commonly ~2 years)",
+        "PrenatalCare": "Yes (subject to limits)",
+        "Delivery": "Covers Normal & C-section",
+        "PostnatalCare": "Yes (subject to limits)",
+        "NewbornCover": "Limited duration coverage",
+        "VaccinationCover": "Sometimes included",
+        "MaxDeliveriesCovered": "Commonly limited to 2",
+        "Notes": "Well-structured maternity add-on with varying coverage tiers."
+    },
+    {
+        "Insurer": "Bajaj Allianz",
+        "Plan": "Family Plans / Riders with Maternity Cover",
+        "WaitingPeriod": "12 - 36 months (varies)",
+        "PrenatalCare": "Yes (plan dependent)",
+        "Delivery": "Normal & C-section covered (limits apply)",
+        "PostnatalCare": "Yes",
+        "NewbornCover": "Limited newborn cover period",
+        "VaccinationCover": "Varies",
+        "MaxDeliveriesCovered": "Varies",
+        "Notes": "Coverage specifics differ widely across policy variants."
+    }
+]

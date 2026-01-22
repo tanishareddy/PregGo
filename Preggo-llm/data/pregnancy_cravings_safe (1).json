@@ -1,0 +1,66 @@
+[
+  {
+    "flavour you are craving": "spicy",
+    "what food to make": "Air Fryer Crispy Onions",
+    "ingredients": "1/4 cup all-purpose flour; 1/2 teaspoon cayenne pepper; 1/4 teaspoon salt; 1 onion; cooking spray",
+    "recipe": "Preheat air fryer to 375\u00b0F (190\u00b0C). Combine flour, cayenne, and salt. Coat onion slices. Place onions in basket, spray with oil, and air fry for 18-23 minutes, shaking every 4-5 minutes.",
+    "source": "Unknown",
+    "pregnancy_safe": "Yes"
+  },
+  {
+    "flavour you are craving": "sweet",
+    "what food to make": "Air Fryer Hot Honey Glazed Carrots",
+    "ingredients": "nonstick cooking spray; 2 tablespoons butter; 3 tablespoons hot honey; 1 pound baby carrots",
+    "recipe": "Preheat air fryer to 400\u00b0F (200\u00b0C). Coat carrots with butter and hot honey. Air fry 15-22 minutes, tossing occasionally. Toss in remaining sauce before serving.",
+    "source": "Unknown",
+    "pregnancy_safe": "Yes"
+  },
+  {
+    "flavour you are craving": "savory",
+    "what food to make": "Air Fryer Sauteed Onions",
+    "ingredients": "1 large onion; 1 1/2 teaspoons olive oil; salt and pepper",
+    "recipe": "Preheat air fryer to 400\u00b0F (200\u00b0C). Toss sliced onions with oil, salt, and pepper. Air fry 10 minutes, shake, then cook 2 more minutes.",
+    "source": "Unknown",
+    "pregnancy_safe": "Yes"
+  },
+  {
+    "flavour you are craving": "spicy",
+    "what food to make": "Air Fryer Pasta Tacos",
+    "ingredients": "manicotti pasta; ground beef; taco seasoning; green chiles; canned tomatoes with green chiles; shredded Cheddar cheese; eggs; milk or half-and-half; tortilla chips; toppings of choice",
+    "recipe": "Cook pasta 6 minutes and rinse. Brown beef and mix with seasoning, chiles, tomatoes, and cheese. Stuff pasta and freeze 30 minutes. Dip in egg wash, coat with crushed tortilla chips. Air fry at 400\u00b0F (200\u00b0C) for 10\u201312 minutes. Serve with toppings.",
+    "source": "Unknown",
+    "pregnancy_safe": "Yes"
+  },
+  {
+    "flavour you are craving": "savory",
+    "what food to make": "Avocado Tuna Salad (use light tuna)",
+    "ingredients": "Canned light tuna; 1 ripe avocado; chopped celery; lemon juice; salt; pepper",
+    "recipe": "Mash avocado, mix with drained light tuna, celery, lemon juice, salt, and pepper. Serve on toast or crackers.",
+    "source": "User Provided",
+    "pregnancy_safe": "Yes (use light tuna, limit 2-3 servings/week)"
+  },
+  {
+    "flavour you are craving": "savory",
+    "what food to make": "Grilled Lamb Chops with Mint Yogurt Sauce",
+    "ingredients": "Lamb chops; olive oil; garlic; salt; pepper; Greek yogurt; mint; lemon juice",
+    "recipe": "Season lamb and grill. Mix yogurt, mint, and lemon juice for sauce. Serve together.",
+    "source": "User Provided",
+    "pregnancy_safe": "Yes"
+  },
+  {
+    "flavour you are craving": "sweet",
+    "what food to make": "Greek Yogurt and Berry Parfait",
+    "ingredients": "Greek yogurt (pasteurized); fresh berries; granola; honey (optional)",
+    "recipe": "Layer yogurt, berries, and granola in a glass. Drizzle honey if desired.",
+    "source": "User Provided",
+    "pregnancy_safe": "Yes (ensure yogurt is pasteurized)"
+  },
+  {
+    "flavour you are craving": "savory",
+    "what food to make": "Veggie Omelet with Spinach and Feta",
+    "ingredients": "Eggs; spinach; bell peppers; onions; feta cheese (pasteurized); salt; pepper",
+    "recipe": "Cook vegetables, add beaten eggs, sprinkle feta, fold and cook through.",
+    "source": "User Provided",
+    "pregnancy_safe": "Yes (ensure feta is pasteurized and eggs fully cooked)"
+  }
+]

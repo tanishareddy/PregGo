@@ -1,0 +1,102 @@
+[
+    {
+        "Exercise":"Walking",
+        "Trimester":"All trimesters",
+        "Benefits":"Improves circulation, reduces stress, supports healthy weight"
+    },
+    {
+        "Exercise":"Prenatal Yoga",
+        "Trimester":"1st\u20133rd trimester",
+        "Benefits":"Enhances flexibility, reduces anxiety, supports posture"
+    },
+    {
+        "Exercise":"Pelvic Tilts",
+        "Trimester":"2nd\u20133rd trimester",
+        "Benefits":"Relieves lower back pain, strengthens core muscles"
+    },
+    {
+        "Exercise":"Side-Lying Leg Lifts",
+        "Trimester":"2nd\u20133rd trimester",
+        "Benefits":"Strengthens hips and thighs, supports pelvic stability"
+    },
+    {
+        "Exercise":"Cat-Cow Stretch",
+        "Trimester":"All trimesters",
+        "Benefits":"Relieves back tension, improves spinal mobility"
+    },
+    {
+        "Exercise":"Swimming",
+        "Trimester":"2nd\u20133rd trimester",
+        "Benefits":"Low-impact full\u2011body exercise, reduces swelling, supports joints"
+    },
+    {
+        "Exercise":"Stationary Cycling",
+        "Trimester":"1st\u20132nd trimester",
+        "Benefits":"Boosts cardiovascular health without strain"
+    },
+    {
+        "Exercise":"Kegel Exercises",
+        "Trimester":"All trimesters",
+        "Benefits":"Strengthens pelvic floor, helps with labor and postpartum recovery"
+    },
+    {
+        "Exercise":"Seated Forward Bend (Modified)",
+        "Trimester":"2nd\u20133rd trimester",
+        "Benefits":"Improves flexibility, reduces lower back tightness"
+    },
+    {
+        "Exercise":"Glute Bridges (Modified)",
+        "Trimester":"1st\u20132nd trimester",
+        "Benefits":"Strengthens glutes and reduces back discomfort"
+    },
+    {
+        "Exercise":"Deep Breathing & Relaxation",
+        "Trimester":"All trimesters",
+        "Benefits":"Reduces stress, supports labor breathing techniques"
+    },
+    {
+        "Exercise":"Prenatal Pilates",
+        "Trimester":"1st\u20132nd trimester",
+        "Benefits":"Strengthens core and improves balance"
+    },
+    {
+        "Exercise":"Standing Side Stretch",
+        "Trimester":"All trimesters",
+        "Benefits":"Releases rib pressure, improves breathing comfort"
+    },
+    {
+        "Exercise":"Quadruped Arm & Leg Reach",
+        "Trimester":"2nd trimester",
+        "Benefits":"Builds stability and supports back muscles"
+    },
+    {
+        "Exercise":"Light Resistance Band Work",
+        "Trimester":"1st\u20132nd trimester",
+        "Benefits":"Maintains muscle tone safely"
+    },
+    {
+        "Exercise":"Tailor Sitting (Butterfly Stretch)",
+        "Trimester":"2nd\u20133rd trimester",
+        "Benefits":"Opens hips, improves pelvic flexibility"
+    },
+    {
+        "Exercise":"Heel Slides",
+        "Trimester":"1st\u20132nd trimester",
+        "Benefits":"Engages core gently and supports pelvic control"
+    },
+    {
+        "Exercise":"Wall Squats (Short Hold)",
+        "Trimester":"2nd trimester",
+        "Benefits":"Strengthens legs and prepares body for labor"
+    },
+    {
+        "Exercise":"Modified Side Plank",
+        "Trimester":"2nd trimester",
+        "Benefits":"Strengthens core without abdominal pressure"
+    },
+    {
+        "Exercise":"Prenatal Water Aerobics",
+        "Trimester":"3rd trimester",
+        "Benefits":"Reduces swelling, supports joints and body weight"
+    }
+]
