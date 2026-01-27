@@ -8,7 +8,7 @@ Contents:
 
 Run locally:
 1. Open terminal and cd into backend: 
-   '''bash
+   ```bash
    cd backend 
 2. Install dependencies: 
    ```bash
