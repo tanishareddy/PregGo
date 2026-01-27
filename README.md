@@ -1,1 +1,44 @@
+# PregGo – Smart Pregnancy Support Web Application
 
+## Aim
+Aid pregnant women in emergency situations by providing instant healthcare and consultations.
+
+---
+
+## Features
+
+1. Real time hospital and bed availability.  
+2. Shows on-duty doctors, gynecologists, and midwives in each nearby hospital.  
+3. If the patient is in critical condition, dispatches doctors or midwives to the patient's location.  
+4. Maintains patient history (Ultrasounds, Medical Records).  
+5. Provides daily guidance on pre-natal and post-natal care, personalized diets, and exercise recommendations using Natural Language Processing (NLP).  
+6. Helpline numbers.
+
+---
+
+## Approach
+
+1. **Location APIs (Google Maps / React)**  
+   To identify the patient’s current location and display the nearest hospitals with real-time directions and travel times.
+
+2. **Database & Cloud Management (MongoDB)**  
+   For storing bed availability, doctor schedules, and patient medical records securely with real-time updates.
+
+3. **CSV & Cloud File Handling**  
+   For importing, exporting, and maintaining structured health data (e.g., lab reports, past visits).
+
+4. **NLP-based Symptom Analysis**  
+   Use pre-trained models to interpret text or voice inputs describing symptoms and recommend next steps or emergency action.
+
+5. **LLM-Powered Chatbot (e.g., OpenAI GPT or local model)**  
+   To enable conversational AI for 24/7 virtual consultations and general pregnancy-related queries.
+
+---
+
+## Why PregGo?
+
+Every day, over 700 women die from preventable pregnancy-related causes, and nearly one maternal death occurs every two minutes. Despite global progress, maternal mortality remains unacceptably high in low-resource regions, including India, where delayed access to healthcare, lack of real-time monitoring, and insufficient prenatal education put countless lives at risk.
+
+Implementing digital health solutions with real-time monitoring, AI-driven alerts, and remote consultations is not just innovative—it is critical to ensuring timely interventions, improving maternal outcomes, and saving thousands of lives every year.
+
+**Source:** https://share.google/mT3VlaPdotkHIUELU
