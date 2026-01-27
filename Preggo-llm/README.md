@@ -1,6 +1,6 @@
-# PregGo - Pregnancy Support LLM Assistant
+# PregGo chatbot - Pregnancy Support LLM Assistant
 
-PregGo is a specialized RAG (Retrieval-Augmented Generation) system that provides friendly, soothing pregnancy support through an AI chatbot. It combines medical knowledge from pregnancy data with supportive tone guidance to deliver compassionate, accurate responses.
+PregGo chatbot is a specialized RAG (Retrieval-Augmented Generation) system that provides friendly, soothing pregnancy support through an AI chatbot. It combines medical knowledge from pregnancy data with supportive tone guidance to deliver compassionate, accurate responses.
 
 ## Features
 
@@ -235,3 +235,4 @@ For issues with:
 - **Nebius API** - Check [Nebius Documentation](https://docs.nebius.ai)
 - **LangChain** - Check [LangChain Docs](https://python.langchain.com)
 - **ChromaDB** - Check [ChromaDB Docs](https://docs.trychroma.com)
+
