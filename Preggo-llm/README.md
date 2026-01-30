@@ -194,45 +194,6 @@ The assistant follows this system prompt:
 4. **LLM Generation** - Sends to Nebius LLM API for response generation
 5. **Response** - Returns supportive, accurate answer
 
-## Troubleshooting
 
-### "Connection error" on chat requests
-- Verify Nebius API key is valid and not expired
-- Check internet connection
-- Ensure `NEBIUS_BASE_URL` is correct
 
-### "No module named 'langchain_community'"
-```powershell
-pip install langchain_community langchain_text_splitters
-```
-
-### Vector database not loading
-- Ensure `./data/` folder has at least one CSV/JSON/TXT file
-- Run `python ingest.py` to populate ChromaDB
-- Check `./chroma_db/` directory exists and has files
-
-### Empty responses
-- Verify data was ingested: Check for 46+ chunks message
-- Add more diverse pregnancy data to improve retrieval
-- Check style_examples collection has examples added
-
-## Dependencies
-
-- `flask` - Web framework
-- `langchain` - LLM orchestration
-- `langchain_nebius` - Nebius AI integration
-- `langchain_community` - Community integrations (Chroma, loaders)
-- `chromadb` - Vector database
-- `python-dotenv` - Environment variable management
-
-## License
-
-This project is for educational and personal use.
-
-## Support
-
-For issues with:
-- **Nebius API** - Check [Nebius Documentation](https://docs.nebius.ai)
-- **LangChain** - Check [LangChain Docs](https://python.langchain.com)
-- **ChromaDB** - Check [ChromaDB Docs](https://docs.trychroma.com)
 
